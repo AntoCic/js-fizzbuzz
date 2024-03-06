@@ -1,6 +1,18 @@
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 :root {
+  --ms_blue : #083B4C;
+  --ms_blue_l : #1389B2;
+  --ms_green : #0CD6A1;
+  --ms_yellow : #FFD166;
+  --ms_pink : #F0466F;
 }
+.ms_bg-blue{
+  background-color: var(--ms_blue);
+}
+.ms_text-blue{
+  color: var(--ms_blue);
+}
+
 
 /*************************************************
       RESET
@@ -24,7 +36,15 @@ a {
 
 /* COMPONENTS */
 /* _______________________________________________ */
-/* btn 1 */
+/* box*/
+.ms_box{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ms_blue_l);
+}
 
 /*************************************************
     GENERAL STYLES
@@ -33,10 +53,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
-
 /* MAIN */
+.fizz_box{
+  background-color: var(--ms_green);
+}
+.buzz_box{
+  background-color: var(--ms_yellow);
+}
 
+.fizz_box.buzz_box{
+  background-color: var(--ms_pink);
+}
 /* FOOTER */
 
 /*************************************************
